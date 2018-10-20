@@ -2,13 +2,19 @@
 <databaseChangeLog
         xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
     <changeSet author="Meer" id="insert-hero-data">
-       <sql>
-           insert into Hero values(11, 'Mr. Nice');
-           insert into Hero values(12, 'Narco');
-       </sql>
+        <insert schemaName="public" tableName="HERO">
+            <column name="id" value="11"/>
+            <column name="name" value="Mr. Nice"/>
+        </insert>
+        <insert schemaName="public" tableName="HERO">
+            <column name="id" value="12"/>
+            <column name="name" value="Narco"/>
+        </insert>
     </changeSet>
 
 

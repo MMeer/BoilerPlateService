@@ -4,16 +4,13 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.Accessors;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Getter
 @Setter
 @Accessors (chain=true)
 @Entity
-@Table(name="Hero")
+@Table(name="HERO")
 public class Hero {
     @Id
     @Column (name="id")
