@@ -1,7 +1,7 @@
-com/turtlespace/boilerplateservice/core/api/HeroDto.class
-com/turtlespace/boilerplateservice/controller/HeroController.class
-com/turtlespace/boilerplateservice/repositories/HeroRepository.class
-com/turtlespace/boilerplateservice/core/HeroService.class
-com/turtlespace/boilerplateservice/BoilerplateServiceApplication.class
-com/turtlespace/boilerplateservice/entities/Hero.class
-com/turtlespace/boilerplateservice/assemblers/HeroAssembler.class
+com/turtlespace/controller/HeroController.class
+com/turtlespace/services/HeroService.class
+com/turtlespace/BoilerplateServiceApplication.class
+com/turtlespace/entities/Hero.class
+com/turtlespace/repositories/HeroRepository.class
+com/turtlespace/api/HeroDto.class
+com/turtlespace/assemblers/HeroAssembler.class

@@ -10,5 +10,8 @@
         <module name="boilerplate-service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="boilerplate-service" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

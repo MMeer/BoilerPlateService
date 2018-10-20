@@ -13,8 +13,7 @@ public class HeroService {
     @Autowired
     private HeroRepository heroRepository;
 
-    public HeroDto findHeroByName(String name)
-    {
+    public HeroDto findHeroByName(String name) {
         Hero result = heroRepository.findByName(name);
         return HeroAssembler.assemble(result);
     }
